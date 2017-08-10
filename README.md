@@ -44,7 +44,6 @@ import 'ol-control-comparelayer'
 
 其他示例请参看example文件夹
 
-
 #### Parameters:
 
 | key | type | desc |
