@@ -20,22 +20,29 @@ npm run build
 
 ## Use
 
-> `ol.control.CompareLayer(beforeMap, afterMap, options)`
+> `ol.control.CompareLayer(beforeMap, afterMap, options)` or `new olControlCompareLayer(beforeMap, afterMap, options)`
 
 ### CDN
 
 ```bash
-https://unpkg.com/ol-control-comparelayer@1.0.0/dist/ol-control-CompareLayer.min.js
-https://unpkg.com/ol-control-comparelayer@1.0.0/dist/ol-control-CompareLayer.js
-https://unpkg.com/ol-control-comparelayer@1.0.0/dist/static/css/ol-control-CompareLayer.css
-https://unpkg.com/ol-control-comparelayer@1.0.0/dist/static/css/ol-control-CompareLayer.min.css
+https://unpkg.com/ol-control-comparelayer@1.1.0/dist/ol-control-CompareLayer.min.js
+https://unpkg.com/ol-control-comparelayer@1.1.0/dist/ol-control-CompareLayer.js
+https://unpkg.com/ol-control-comparelayer@1.1.0/dist/ol-control-CompareLayer.css
+https://unpkg.com/ol-control-comparelayer@1.1.0/dist/ol-control-CompareLayer.min.css
 ```
 
 ### NPM
 
 ```bash
 npm install ol-control-comparelayer --save
+
 import 'ol-control-comparelayer'
+new ol.control.Loading(beforeMap, afterMap, options)
+
+// or
+
+import olControlCompareLayer from 'ol-control-loading'
+new olControlCompareLayer(beforeMap, afterMap, options)
 ```
 
 ## Examples

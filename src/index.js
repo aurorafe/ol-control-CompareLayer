@@ -4,10 +4,9 @@
  */
 import './scss/CompareLayer.scss'
 import * as css from './dom/css'
-import * as htmlUtils from 'nature-dom-util/src/domUtils'
-import * as Events from 'nature-dom-util/src/Events'
+import * as htmlUtils from 'nature-dom-util/src/utils/domUtils'
+import * as Events from 'nature-dom-util/src/events/Events'
 import 'pepjs'
-
 ol.control.CompareLayer = function (beforeMap, afterMap, params) {
   this.options = params || {}
   if (beforeMap && afterMap) {
@@ -274,3 +273,6 @@ ol.control.CompareLayer.prototype.orderLayerZindex = function () {
     this.afterMap.setZIndex(min)
   }
 }
+
+let olControlCompareLayer = ol.control.CompareLayer
+export default olControlCompareLayer

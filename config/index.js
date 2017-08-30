@@ -10,11 +10,17 @@ module.exports = {
   dev: {
     env: require('./dev.env'),
     devtoolSourceMap: '#source-map',
+    port: 666,
+    autoOpenBrowser: true,
+    assetsSubDirectory: '',
+    assetsPublicPath: '/',
+    proxyTable: {},
     cssSourceMap: true
   },
   base: {
-    libraryName: 'ol-control-CompareLayer',
+    fileName: 'ol-control-CompareLayer',
+    libraryName: 'olControlCompareLayer',
     distDirectory: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static'
+    assetsSubDirectory: ''
   }
 }

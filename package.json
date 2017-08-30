@@ -1,13 +1,14 @@
 {
   "name": "ol-control-comparelayer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "openlayers comparelayer",
-  "main": "src/index.js",
+  "main": "dist/ol-control-CompareLayer.js",
   "scripts": {
     "dev": "node build/development.js",
     "travisDev": "node build/development.js --env nowatch",
     "build": "node build/build.js",
-    "start": "node build/dev-server.js"
+    "server": "",
+    "start": "npm run travisDev && npm run build"
   },
   "keywords": [
     "openlayers",
@@ -20,8 +21,8 @@
     "url": "https://github.com/aurorafe/ol-control-CompareLayer.git"
   },
   "dependencies": {
-    "nature-dom-util": "^1.0.0",
-    "openlayers": "^4.2.0",
+    "nature-dom-util": "^1.1.0",
+    "openlayers": "^4.3.0",
     "pepjs": "^0.4.3"
   },
   "devDependencies": {
